@@ -2,6 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import SpotifyPlayer from 'react-spotify-player'
+
+// size may also be a plain string using the presets 'large' or 'compact'
+const size = {
+  width: '100%',
+  height: 300
+}
+const view = 'list' // or 'coverart'
+const theme = 'black' // or 'white'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -13,32 +22,18 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-            </div>
-            {posts
-              .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
+              <div class="columns">
+                <div class="column is-one-third">
+                  <div class="card bg">
+                    <div class="card-content">
+                      Dōna Flor è nomadismo di piedi, musica e colore. È atlantica: navi
+                      la percorrono in lungo e in largo. È una diaspora di fiori, viaggi,
+                      racconti.
+                    </div>
+                  </div>
                 </div>
-              ))}
+              </div>
+            </div>
           </div>
         </section>
       </Layout>
@@ -49,16 +44,16 @@ export default class IndexPage extends React.Component {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
+      edges: PropTypes.array
+    })
+  })
 }
 
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       edges {
         node {

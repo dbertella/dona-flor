@@ -1,11 +1,23 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-$kaldi-red: #FD461E
-$kaldi-red-invert: #fff
+$dona-red: #9B003C
+$dona-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+// $primary: $dona-red
+// $primary-invert: $dona-red-invert
+$text: #9a9a9a
+$link: $dona-red
+
+html
+  height: 100%
+
+body
+  min-height: 100%
+
+body
+  background: url("/img/cover.jpg") center center
+  background-size: cover
 
 .content .taglist
   list-style: none
@@ -40,3 +52,16 @@ $primary-invert: $kaldi-red-invert
   margin-top: 0 !important
 
 @import "~bulma"
+
+
+.navbar
+  background: black
+  a
+    color: white
+
+.card
+  background: rgba(#fff, 0.9)
+  border-radius: 3px
+
+.bg
+  background: rgba(#000, 0.9)
