@@ -9,7 +9,7 @@ Il repertorio riprende brani di Lhasa de Sela, Cesaria Evora, altri tratti dalla
 
 ### Genre
 
-Etnomusic | Free Etno folk
+⚡️Etnomusic | Free Etno folk
 
 ### Band Members
 
