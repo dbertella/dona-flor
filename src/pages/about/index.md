@@ -11,8 +11,6 @@ Il progetto nasce nel 2015, dall'idea di Cecilia Fumanelli e nel tempo diventa u
 
 Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.
 
-
-
 ### Genre
 
 ⚡️Etnomusic | Free Etno folk | Soul songs
@@ -22,6 +20,6 @@ Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.
 🎤Cecilia Fumanelli - Voce;\
 🎸Simone Riva - Chitarra;\
 🎹Guido Baldoni - Fisarmonica;\
-Roberto Carlotti - Fisarmonica e bouzouki\
+Roberto Carlotti - Fisarmonica e bouzouki;\
 🎻Max Confalonieri - Contrabbasso;\
 🥁Max Malavasi - Percussioni
