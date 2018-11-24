@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Instagram } from './instagram'
+import { Instagram } from './Instagram'
 import { Facebook } from './Facebook'
 
 const Navbar = () => {
