@@ -18,7 +18,7 @@ const Navbar = () => {
         allow="encrypted-media"
         title="Alma Desnuda - Dona Flor"
       />
-      <button className="has-text-white has-background-black has-border-0" onClick={setIframeHeight}>
+      <button className="has-text-white has-background-black button-playlist" onClick={setIframeHeight}>
         {isCollapsed ? 'More' : 'Hide'}
       </button>
     </footer>
