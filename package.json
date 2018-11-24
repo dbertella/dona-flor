@@ -24,7 +24,6 @@
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "react-helmet": "^5.2.0",
-    "react-spotify-player": "^1.0.4",
     "uuid": "^3.2.1"
   },
   "keywords": [
