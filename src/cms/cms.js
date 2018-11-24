@@ -6,4 +6,5 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 
 CMS.registerPreviewTemplate('home', HomePagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
+CMS.registerPreviewTemplate('contact', AboutPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
