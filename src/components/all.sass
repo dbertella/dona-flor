@@ -8,6 +8,7 @@ $primary: $dona-red
 $primary-invert: $dona-red-invert
 $text: #9a9a9a
 $link: $dona-red
+$text-strong: #afafaf
 
 html
   height: 100%
@@ -56,12 +57,10 @@ body
 @import "~bulma"
 
 .navbar
-  background: black
-  display: flex
-  align-items: center
-  justify-content: space-around
   a
     color: white
+    &:hover
+      background: transparent
 
 .card
   background: rgba(#fff, 0.9)

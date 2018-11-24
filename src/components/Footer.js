@@ -3,7 +3,7 @@ import { setConfig } from 'react-hot-loader'
 
 setConfig({ pureSFC: true })
 
-const Navbar = () => {
+const Footer = () => {
   const [height, setHeight] = useState(80)
   const isCollapsed = height === 80
   const setIframeHeight = () => (isCollapsed ? setHeight(400) : setHeight(80))
@@ -25,4 +25,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Footer
