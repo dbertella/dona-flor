@@ -11,13 +11,13 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
     <section className="section">
       <div className="container">
         <div className="content">
-          <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light">
+          <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light is-hidden-touch">
             {title}
           </h2>
           <div className="columns">
             <div className="column is-one-third">
               <div className="card bg">
-                <div className="card-content">
+                <div className="card-content home-text">
                   <PageContent className="content" content={content} />
                 </div>
               </div>
