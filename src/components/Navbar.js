@@ -12,11 +12,11 @@ const Navbar = () => {
   return (
     <nav className="navbar has-background-black" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
+        <Link to="/" className="navbar-item" onClick={() => setActive(false)}>
           <div className="has-text-weight-bold is-size-4">Dōna Flor</div>
         </Link>
 
-        <a
+        <span
           role="button"
           className="navbar-burger burger"
           aria-label="menu"
@@ -27,15 +27,15 @@ const Navbar = () => {
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
-        </a>
+        </span>
       </div>
 
       <div className={`navbar-menu has-background-black ${isActive ? 'is-active' : ''}`}>
         <div className="navbar-start">
-          <Link className="navbar-item" to="/about">
+          <Link className="navbar-item" to="/about" onClick={() => setActive(false)}>
             About
           </Link>
-          <Link className="navbar-item" to="/contact">
+          <Link className="navbar-item" to="/contact" onClick={() => setActive(false)}>
             Contact
           </Link>
         </div>

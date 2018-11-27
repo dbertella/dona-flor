@@ -4968,6 +4968,13 @@ gatsby-link@^2.0.4:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
+gatsby-plugin-layout@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.9.tgz#e5509ee976d0da54505c289c5f55cd52200e4136"
+  integrity sha512-vidWDcfuDzeSdAyu34XrFuaO3zycke7zhS8Qh1lTESBNip3A0m2wYvrfAAxGiTJfzs+4YCpmsbbX3Gk3K/36Tg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-netlify-cms@^3.0.0:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-3.0.3.tgz#50e8171316188f61dd488ae20e12eb35151b4260"

@@ -3,6 +3,12 @@ module.exports = {
     title: 'Gatsby + Netlify CMS Starter',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+          component: require.resolve('./src/components/Layout')
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
