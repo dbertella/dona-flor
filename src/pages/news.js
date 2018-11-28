@@ -8,25 +8,21 @@ export default class NewsPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section>
+      <section className="section">
         <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">News</h1>
-          </div>
           {posts
             .map(({ node: post }) => (
               <div
-                className="content bg"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                className="box bg"
                 key={post.id}
               >
-                <p>
+                <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
-                </p>
+                </h3>
                 <p>
                   {post.excerpt}
                   <br />
@@ -67,7 +63,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD-MM-YYYY")
           }
         }
       }
