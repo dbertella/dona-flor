@@ -17,9 +17,9 @@ Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.
 
 ### Band Members
 
-🎤Cecilia Fumanelli - Voce;\
-🎸Simone Riva - Chitarra;\
-🎹Guido Baldoni - Fisarmonica;\
-Roberto Carlotti - Fisarmonica e bouzouki;\
-🎻Max Confalonieri - Contrabbasso;\
-🥁Max Malavasi - Percussioni
+* Cecilia Fumanelli - Voce;
+* Simone Riva - Chitarra;
+* Guido Baldoni - Fisarmonica;
+* Roberto Carlotti - Fisarmonica e bouzouki;
+* Max Confalonieri - Contrabbasso;
+* Max Malavasi - Percussioni
