@@ -2,4 +2,4 @@
 templateKey: contact-page
 title: Contatti
 ---
-cecilia.fumanelli@gmail.com
+![Contatta Dona Flor](/img/donaflor-live.jpeg)
