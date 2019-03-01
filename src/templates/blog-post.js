@@ -25,7 +25,6 @@ export const BlogPostTemplate = ({
             background-image: url(${
               typeof image !== 'string' ? image.childImageSharp.fluid.src : image
             });
-            background-size: cover;
           }
         `}</style>
       </Helmet>

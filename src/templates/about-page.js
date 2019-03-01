@@ -14,7 +14,6 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
             background-image: url(${
               typeof image !== 'string' ? image.childImageSharp.fluid.src : image
             });
-            background-size: cover;
           }
         `}</style>
       </Helmet>
