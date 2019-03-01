@@ -1,12 +1,23 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
   return (
     <section className="section section--gradient">
+      <Helmet>
+        <style type="text/css">{`
+          body {
+            background-image: url(${
+              typeof image !== 'string' ? image.childImageSharp.fluid.src : image
+            });
+            background-size: cover;
+          }
+        `}</style>
+      </Helmet>
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -36,6 +47,7 @@ const AboutPage = ({ data }) => {
     <AboutPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
       content={post.html}
     />
   )
@@ -53,6 +65,13 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

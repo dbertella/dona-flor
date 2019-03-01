@@ -1,13 +1,24 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 
-export const HomePageTemplate = ({ title, content, contentComponent }) => {
+export const HomePageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="section">
+      <Helmet>
+        <style type="text/css">{`
+          body {
+            background-image: url(${
+              typeof image !== 'string' ? image.childImageSharp.fluid.src : image
+            });
+            background-size: cover;
+          }
+        `}</style>
+      </Helmet>
       <div className="container">
         <div className="content">
           <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light is-hidden-touch">
@@ -30,6 +41,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  image: PropTypes.oneOfType([PropTypes.object]),
   content: PropTypes.string,
   contentComponent: PropTypes.func
 }
@@ -41,6 +53,7 @@ const HomePage = ({ data }) => {
     <HomePageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
       content={post.html}
     />
   )
@@ -58,6 +71,13 @@ export const homePageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

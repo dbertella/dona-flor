@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
@@ -60,7 +61,7 @@ class ContactForm extends React.Component {
               name="name"
               className="input"
               type="text"
-              placeholder="e.g Alex Smith"
+              placeholder="e.g Ceci Brown"
               onChange={this.handleChange}
             />
           </div>
@@ -73,7 +74,7 @@ class ContactForm extends React.Component {
               name="email"
               className="input"
               type="email"
-              placeholder="e.g. alexsmith@gmail.com"
+              placeholder="e.g. ceci@gmail.com"
               onChange={this.handleChange}
             />
           </div>
@@ -91,7 +92,7 @@ class ContactForm extends React.Component {
         </div>
         <div className="control">
           <button className="button is-primary" type="submit">
-            Submit
+            Invia il messaggio
           </button>
         </div>
       </form>
@@ -99,11 +100,21 @@ class ContactForm extends React.Component {
   }
 }
 
-export const ContactPageTemplate = ({ title, content, contentComponent }) => {
+export const ContactPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
+      <Helmet>
+        <style type="text/css">{`
+          body {
+            background-image: url(${
+              typeof image !== 'string' ? image.childImageSharp.fluid.src : image
+            });
+            background-size: cover;
+          }
+        `}</style>
+      </Helmet>
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -134,6 +145,7 @@ const ContactPage = ({ data }) => {
     <ContactPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
       content={post.html}
     />
   )
@@ -151,6 +163,13 @@ export const contactPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1024, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

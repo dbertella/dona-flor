@@ -10,7 +10,11 @@ const Navbar = () => {
   const [isActive, setActive] = useState(false)
   const toggleMenu = () => setActive(!isActive)
   return (
-    <nav className="navbar has-background-black" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar has-background-black"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="navbar-brand">
         <Link to="/" className="navbar-item" onClick={() => setActive(false)}>
           <div className="has-text-weight-bold is-size-4">Dōna Flor</div>
@@ -34,6 +38,9 @@ const Navbar = () => {
         <div className="navbar-start">
           <Link className="navbar-item" to="/about" onClick={() => setActive(false)}>
             About
+          </Link>
+          <Link className="navbar-item" to="/music" onClick={() => setActive(false)}>
+            Music
           </Link>
           <Link className="navbar-item" to="/contact" onClick={() => setActive(false)}>
             Contact
@@ -69,5 +76,4 @@ const Navbar = () => {
     </nav>
   )
 }
-
 export default Navbar

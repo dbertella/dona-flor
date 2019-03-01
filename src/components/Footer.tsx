@@ -14,15 +14,16 @@ const Footer = () => {
         width="100%"
         height={height}
         frameBorder="0"
-        allowtransparency="true"
         allow="encrypted-media"
         title="Alma Desnuda - Dona Flor"
       />
-      <button className="has-text-white has-background-black button-playlist" onClick={setIframeHeight}>
+      <button
+        className="has-text-white has-background-black button-playlist"
+        onClick={setIframeHeight}
+      >
         {isCollapsed ? 'More' : 'Hide'}
       </button>
     </footer>
   )
 }
-
 export default Footer

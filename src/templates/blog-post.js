@@ -9,15 +9,26 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  image,
   tags,
   title,
-  helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
     <section className="section">
-      {helmet || ''}
+      <Helmet titleTemplate="%s | News">
+        <title>{`${title}`}</title>
+        <meta name="description" content={`${description}`} />
+        <style type="text/css">{`
+          body {
+            background-image: url(${
+              typeof image !== 'string' ? image.childImageSharp.fluid.src : image
+            });
+            background-size: cover;
+          }
+        `}</style>
+      </Helmet>
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1 bg">
@@ -48,8 +59,7 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+  title: PropTypes.string
 }
 
 const BlogPost = ({ data }) => {
@@ -60,17 +70,18 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | News`} />}
+      // helmet={<Helmet title={`${post.frontmatter.title} | News`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
     />
   )
 }
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    markdownRemark: PropTypes.object
+  })
 }
 
 export default BlogPost
@@ -85,6 +96,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1024, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
