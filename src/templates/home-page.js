@@ -27,7 +27,7 @@ export const HomePageTemplate = ({ title, image, content, contentComponent }) =>
             <div className="column is-one-third">
               <div className="card bg">
                 <div className="card-content home-text">
-                  <PageContent className="content" content={content} />
+                  <PageContent className="content is-size-4" content={content} />
                 </div>
               </div>
             </div>
