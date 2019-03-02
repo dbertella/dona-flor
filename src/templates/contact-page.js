@@ -106,7 +106,7 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent })
 
   return (
     <>
-      <Helmet titleTemplate="%s | Dona Flor">
+      <Helmet titleTemplate="%s | Dōna Flor">
         <title>{title}</title>
       </Helmet>
       <FullWidthImg image={image} />

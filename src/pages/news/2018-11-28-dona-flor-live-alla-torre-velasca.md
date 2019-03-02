@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Dona Flor live alla Torre Velasca
+title: Dōna Flor live alla Torre Velasca
 date: 2018-11-28T23:55:59.859Z
 image: /img/dona-florbn.jpg
 description: >-

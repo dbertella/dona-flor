@@ -15,7 +15,7 @@ const Footer = () => {
         height={height}
         frameBorder="0"
         allow="encrypted-media"
-        title="Alma Desnuda - Dona Flor"
+        title="Alma Desnuda - Dōna Flor"
       />
       <button
         className="has-text-white has-background-black button-playlist"

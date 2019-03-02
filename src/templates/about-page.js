@@ -9,7 +9,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
   const PageContent = contentComponent || Content
   return (
     <>
-      <Helmet titleTemplate="%s | Dona Flor">
+      <Helmet titleTemplate="%s | Dōna Flor">
         <title>{title}</title>
       </Helmet>
       <FullWidthImg image={image} />

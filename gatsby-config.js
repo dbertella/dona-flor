@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Dona Flor',
+    title: 'Dōna Flor',
     description:
       '💃🏻Dōna Flor è una band composta da 5 musicisti (voce, fisarmonica, chitarra, contrabbasso, batteria/percussioni), che propone un repertorio dal sapore prevalentemente sudamericano e gitano, una "free etnomusic" fatta di brani tradizionali e originali, cumbie, sonorità capoverdiane, ma anche tradizionali balcanici e klezmer, con arrangiamenti originali e contaminazioni jazz.'
   },
@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Dona Flor',
-        short_name: 'Dona Flor',
+        name: 'Dōna Flor',
+        short_name: 'Dōna Flor',
         start_url: '/',
         background_color: '#6b37bf',
         theme_color: '#6b37bf',
