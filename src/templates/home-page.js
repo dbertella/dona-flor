@@ -7,7 +7,8 @@ import { Image } from '../components/Image'
 import styled from 'styled-components'
 
 const Logo = styled.div`
-  width: 350px;
+  width: 320px;
+  max-width: 100%;
 `
 export const HomePageTemplate = ({ title, logo, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
