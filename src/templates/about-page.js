@@ -3,11 +3,15 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 import FullWidthImg from '../components/FullWidthImg'
+import Helmet from 'react-helmet'
 
 export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
   return (
     <>
+      <Helmet titleTemplate="%s | Dona Flor">
+        <title>{title}</title>
+      </Helmet>
       <FullWidthImg image={image} />
       <section className="section section--gradient">
         <div className="container">

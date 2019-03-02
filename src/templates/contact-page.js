@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 import { navigate } from 'gatsby'
 import FullWidthImg from '../components/FullWidthImg'
+import Helmet from 'react-helmet';
 
 function encode(data) {
   return Object.keys(data)
@@ -105,6 +106,9 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent })
 
   return (
     <>
+      <Helmet titleTemplate="%s | Dona Flor">
+        <title>{title}</title>
+      </Helmet>
       <FullWidthImg image={image} />
       <section className="section section--gradient">
         <div className="container">

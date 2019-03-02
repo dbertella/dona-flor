@@ -3,10 +3,14 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
+import { Image } from '../components/Image'
+import styled from 'styled-components'
 
-export const HomePageTemplate = ({ title, image, content, contentComponent }) => {
+const Logo = styled.div`
+  width: 350px;
+`
+export const HomePageTemplate = ({ title, logo, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
-
   return (
     <section className="section">
       <Helmet>
@@ -20,9 +24,9 @@ export const HomePageTemplate = ({ title, image, content, contentComponent }) =>
       </Helmet>
       <div className="container">
         <div className="content">
-          <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light is-hidden-touch">
-            {title}
-          </h2>
+          <Logo>
+            <Image image={logo} alt={title} title={title} />
+          </Logo>
           <div className="columns">
             <div className="column is-one-third">
               <div className="card bg">
@@ -53,6 +57,7 @@ const HomePage = ({ data }) => {
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
+      logo={post.frontmatter.logo}
       content={post.html}
     />
   )
@@ -73,6 +78,13 @@ export const homePageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 1024, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        logo {
+          childImageSharp {
+            fluid(maxWidth: 320, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
