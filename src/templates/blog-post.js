@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
+import FullWidthImg from '../components/FullWidthImg'
 
 export const BlogPostTemplate = ({
   content,
@@ -11,46 +12,42 @@ export const BlogPostTemplate = ({
   description,
   image,
   tags,
-  title,
+  title
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
-      <Helmet titleTemplate="%s | News">
-        <title>{`${title}`}</title>
-        <meta name="description" content={`${description}`} />
-        <style type="text/css">{`
-          body {
-            background-image: url(${
-              typeof image !== 'string' ? image.childImageSharp.fluid.src : image
-            });
-          }
-        `}</style>
-      </Helmet>
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1 bg">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <>
+      <FullWidthImg image={image} />
+      <section className="section">
+        <Helmet titleTemplate="%s | News">
+          <title>{`${title}`}</title>
+          <meta name="description" content={`${description}`} />
+        </Helmet>
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1 bg">
+              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                {title}
+              </h1>
+              <PostContent content={content} />
+              {tags && tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map(tag => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 
