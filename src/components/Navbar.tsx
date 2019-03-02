@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { Instagram } from './Instagram'
 import { Facebook } from './Facebook'
 import { setConfig } from 'react-hot-loader'
+import { Youtube } from './Youtube'
 
 setConfig({ pureSFC: true })
 
@@ -69,6 +70,16 @@ const Navbar = () => {
           >
             <span className="icon">
               <Facebook className="has-fill-white" />
+            </span>
+          </a>
+          <a
+            className="navbar-item"
+            href="https://www.youtube.com/channel/UCnXYjBt-BaLp4V72kfv-g8w"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon">
+              <Youtube className="has-fill-white" />
             </span>
           </a>
         </div>
