@@ -10,6 +10,7 @@ const Logo = styled.div`
   width: 320px;
   max-width: 100%;
 `
+
 export const HomePageTemplate = ({ title, logo, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
   return (
@@ -25,7 +26,7 @@ export const HomePageTemplate = ({ title, logo, image, content, contentComponent
       </Helmet>
       <div className="container">
         <div className="content">
-          <Logo>
+          <Logo className="is-hidden-mobile">
             <Image image={logo} alt={title} title={title} />
           </Logo>
           <div className="columns">
