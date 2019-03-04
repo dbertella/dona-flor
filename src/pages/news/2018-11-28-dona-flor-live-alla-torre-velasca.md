@@ -5,7 +5,8 @@ date: 2018-11-28T23:55:59.859Z
 description: >-
   Da domani fino a sabato ci trovate a suonare alla Torre Velasca per
   #atlanticofest in occasione dell'uscita del nuovo disco di #marcomengoni
-image: /img/dona-florbn.jpg
+image: >-
+  https://raw.githubusercontent.com/dbertella/dona-flor/master/static/img/cover.jpg
 tags:
   - '#livemusic'
   - '#festival'
