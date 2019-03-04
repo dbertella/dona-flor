@@ -12,8 +12,6 @@ tags:
   - '#donaflor'
   - '#espiritodofado'
 ---
-![dona flor live](/img/screenshot-2019-03-04-at-14.45.01.png)
-
 [donaflor.music](https://www.instagram.com/donaflor.music/) Da domani fino a sabato ci trovate a suonare alla Torre Velasca per #atlanticofest in occasione dell'uscita del nuovo disco di #marcomengoni
 
 Stay flowered!
