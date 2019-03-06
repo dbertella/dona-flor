@@ -4,6 +4,9 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+site_url: https://donaflormusic.com
+display_url: https://donaflormusic.com
+logo_url: https://donaflormusic.com/static/44bf3c217aefc34a0fc3b17a8811169f/d2820/logo.png
 
 collections:
   - name: "news"
