@@ -14,6 +14,6 @@ tags:
 ---
 [donaflor.music](https://www.instagram.com/donaflor.music/) Da domani fino a sabato ci trovate a suonare alla Torre Velasca per #atlanticofest in occasione dell'uscita del nuovo disco di #marcomengoni
 
-![]()
+![](/img/news.jpg)
 
 Stay flowered!
