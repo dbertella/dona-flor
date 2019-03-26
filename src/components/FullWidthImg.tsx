@@ -7,12 +7,12 @@ export const FullWidthImg = styled(Img)`
   margin-top: 0;
 `
 
-export default ({ image }: { image: { childImageSharp: GatsbyImageProps } }) => {
+export default ({ image, ...rest }: { image: { childImageSharp: GatsbyImageProps } }) => {
   if (!image) {
     return null
   }
   if (typeof image === 'string') {
-    return <img src={image} alt="" />
+    return <img src={image} alt="" {...rest} />
   }
-  return <FullWidthImg fluid={image.childImageSharp.fluid} alt="" />
+  return <FullWidthImg fluid={image.childImageSharp.fluid} alt="" {...rest} />
 }
