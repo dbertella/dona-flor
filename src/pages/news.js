@@ -50,12 +50,10 @@ export default class BlogIndexPage extends React.Component {
           <div className="container">
             <div className="content">
               <div className="column is-10 is-offset-1">
-                <div className="section bg">
-                  <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light">
-                    Eventi e Concerti
-                  </h2>
-                  <BlogRoll />
-                </div>
+                <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light">
+                  Eventi e Concerti
+                </h2>
+                <BlogRoll />
               </div>
             </div>
           </div>
@@ -64,21 +62,16 @@ export default class BlogIndexPage extends React.Component {
           <div className="container">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="section bg">
-                  <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light">
-                    Updates
-                  </h2>
-                  <Grid>
-                    {allInstaNode.edges.map(({ node }) => (
-                      <Card key={node.id}>
-                        <img src={node.thumbnails[2].src} alt={node.caption} />
-                        <Overlay>
-                          <div>{node.caption}</div>
-                        </Overlay>
-                      </Card>
-                    ))}
-                  </Grid>
-                </div>
+                <Grid>
+                  {allInstaNode.edges.map(({ node }) => (
+                    <Card key={node.id}>
+                      <img src={node.thumbnails[2].src} alt={node.caption} />
+                      <Overlay>
+                        <div>{node.caption}</div>
+                      </Overlay>
+                    </Card>
+                  ))}
+                </Grid>
               </div>
             </div>
           </div>

@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 import { Image } from '../components/Image'
 import styled from 'styled-components'
-import FullWidthImg from '../components/FullWidthImg'
 
 const Logo = styled.div`
   width: 150px;
@@ -20,7 +19,7 @@ export const HomePageTemplate = ({ title, logo, image, content, contentComponent
   const PageContent = contentComponent || Content
   return (
     <section className="section">
-      <Helmet className="is-hidden-mobile">
+      <Helmet>
         <style type="text/css">{`
           body {
             background-image: url(${
@@ -34,7 +33,7 @@ export const HomePageTemplate = ({ title, logo, image, content, contentComponent
           <Logo>
             <Image image={logo} alt={title} title={title} />
           </Logo>
-          <div className="columns">
+          <div className="columns is-hidden-mobile">
             <div className="column is-one-third">
               <div className="card bg">
                 <div className="card-content home-text">
