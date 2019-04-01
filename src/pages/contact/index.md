@@ -1,6 +1,6 @@
 ---
 templateKey: contact-page
 title: Contatti
-image: /img/news.jpg
+image: /img/10-min.jpg
 ---
 Per saperne di più su di noi, per contattarci per un concerto o evento, o anche solo per dirci cosa ne pensi, contattaci! Ti risponderemo prima possibile.
