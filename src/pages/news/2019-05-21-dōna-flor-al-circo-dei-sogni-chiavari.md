@@ -5,7 +5,7 @@ date: 2019-05-21T13:14:56.097Z
 description: |+
 
 
-image: /img/img_8184-79.jpg
+image: /img/img_8184-79-min.jpg
 ---
 Bellissima avventura quella appena trascorsa, in cui abbiamo suonato per la traversata del grande Andrea Loreni, uno dei funamboli più famosi d'Europa.
 
