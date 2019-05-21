@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: Dōna Flor
-image: /img/about.jpg
+image: /img/img_8339-55-min.jpg
 ---
 ### Biography
 
