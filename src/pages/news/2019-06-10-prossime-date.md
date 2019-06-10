@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Prossime date!
+title: Prossimi concerti
 date: 2019-06-10T14:24:07.427Z
 description: |+
 
