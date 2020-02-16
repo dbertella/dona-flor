@@ -1,38 +1,38 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Content, { HTMLContent } from '../components/Content'
-import { navigate } from 'gatsby'
-import FullWidthImg from '../components/FullWidthImg'
-import Helmet from 'react-helmet'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Content, { HTMLContent } from "../components/Content";
+import { navigate } from "gatsby";
+import FullWidthImg from "../components/FullWidthImg";
+import Helmet from "react-helmet";
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 }
 
 class ContactForm extends React.Component {
-  state = {}
+  state = {};
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
   handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        'form-name': form.getAttribute('name'),
+        "form-name": form.getAttribute("name"),
         ...this.state
       })
     })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
-  }
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
 
   render() {
     return (
@@ -51,12 +51,12 @@ class ContactForm extends React.Component {
           onChange={this.handleChange}
         />
         <p className="is-invisible">
-          <label>
+          <label htmlFor="field">
             Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
         <div className="field">
-          <label className="label">Nome</label>
+          <label className="label" htmlFor="name">Nome</label>
           <div className="control">
             <input
               name="name"
@@ -69,7 +69,7 @@ class ContactForm extends React.Component {
         </div>
 
         <div className="field">
-          <label className="label">Email</label>
+          <label className="label" htmlFor="email">Email</label>
           <div className="control">
             <input
               name="email"
@@ -81,7 +81,7 @@ class ContactForm extends React.Component {
           </div>
         </div>
         <div className="field">
-          <label className="label">Messaggio</label>
+          <label className="label" htmlFor="messaggio">Messaggio</label>
           <div className="control">
             <textarea
               name="messaggio"
@@ -97,12 +97,17 @@ class ContactForm extends React.Component {
           </button>
         </div>
       </form>
-    )
+    );
   }
 }
 
-export const ContactPageTemplate = ({ title, image, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const ContactPageTemplate = ({
+  title,
+  image,
+  content,
+  contentComponent
+}) => {
+  const PageContent = contentComponent || Content;
 
   return (
     <>
@@ -124,17 +129,17 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent })
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func
-}
+};
 
 const ContactPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <ContactPageTemplate
@@ -143,14 +148,14 @@ const ContactPage = ({ data }) => {
       image={post.frontmatter.image}
       content={post.html}
     />
-  )
-}
+  );
+};
 
 ContactPage.propTypes = {
   data: PropTypes.object.isRequired
-}
+};
 
-export default ContactPage
+export default ContactPage;
 
 export const contactPageQuery = graphql`
   query ContactPage($id: String!) {
@@ -168,4 +173,4 @@ export const contactPageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,5 +1,5 @@
 import React from 'react'
-import CMS from 'netlify-cms'
+import CMS from 'netlify-cms-app'
 import { CSSInjector } from './CSSInjector'
 
 import HomePagePreview from './preview-templates/HomePagePreview'
@@ -9,6 +9,12 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 
 
 CMS.registerPreviewTemplate('about', props => (
+  <CSSInjector>
+    <AboutPagePreview {...props} />
+  </CSSInjector>
+))
+
+CMS.registerPreviewTemplate('concerti', props => (
   <CSSInjector>
     <AboutPagePreview {...props} />
   </CSSInjector>

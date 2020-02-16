@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogRoll from '../components/BlogRoll'
 import styled from 'styled-components'
+import { graphql } from 'gatsby'
 
 const Relative = styled.div`
   position: relative;
