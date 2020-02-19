@@ -47,9 +47,9 @@ const Navbar = () => {
           <Link className="navbar-item" to="/contact" onClick={() => setActive(false)}>
             Contact
           </Link>
-          {/* <Link className="navbar-item" to="/concerti" onClick={() => setActive(false)}>
-            Concerti
-          </Link> */}
+          <Link className="navbar-item" to="/concerti" onClick={() => setActive(false)}>
+            Date
+          </Link>
           <Link className="navbar-item" to="/news" onClick={() => setActive(false)}>
             News
           </Link>
