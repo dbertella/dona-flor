@@ -119,7 +119,7 @@ export const ContactPageTemplate = ({
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h2 className="title is-size-3 has-text-white has-text-weight-bold is-bold-light">
+              <h2 className="title is-size-3 has-text-dark has-text-weight-bold is-bold-light">
                 {title}
               </h2>
               <PageContent className="content" content={content} />

@@ -18,7 +18,7 @@ const Footer = () => {
         title="Alma Desnuda - Dōna Flor"
       />
       <button
-        className="has-text-white has-background-black button-playlist"
+        className="has-text-dark has-background-black button-playlist"
         onClick={setIframeHeight}
       >
         {isCollapsed ? 'More' : 'Hide'}
