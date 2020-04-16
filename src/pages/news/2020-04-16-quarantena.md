@@ -42,5 +42,3 @@ sotto il cielo\
 sotto il cielo di acciaio\
 sono il punto nero che va\
 alle rive della fortuna”.
-
-[https://www.youtube.com/watch?v=xodomg2F__I](https://www.youtube.com/watch?v=xodomg2F__I)
