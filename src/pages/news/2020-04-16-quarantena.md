@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Quarantena
+title: Dōna Flor in Quarantena
 date: 2020-04-16T14:25:42.662Z
 description: Cosa facciamo in questo periodo?
 image: /img/max rec.jpg
