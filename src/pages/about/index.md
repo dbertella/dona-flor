@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: Dōna Flor
-image: /img/img_8339-55-min.jpg
+image: /img/about.jpg
 ---
 ### Biography
 
@@ -21,9 +21,22 @@ Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.
 
 * Cecilia Fumanelli - Voce;
 * Simone Riva - Chitarra;
-* Guido Baldoni - Fisarmonica;
 * Roberto Carlotti - Fisarmonica e bouzouki;
 * Max Confalonieri - Contrabbasso;
 * Max Malavasi - Percussioni
-* Valentina Brivio - Vocalist
-* Sofia Grignani - Vocalist
+
+
+
+  **VOCALIST**
+
+  Valentina Brivio\
+  Sofia Grignani\
+  Miriam Valvassori
+
+
+
+  **OSPITI**
+
+  Guido Baldoni - Fisarmonica;\
+  Roberto Carlotti - Fisarmonica e Bouzouki\
+  Giulia Larghi - Violino
