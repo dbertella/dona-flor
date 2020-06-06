@@ -1,11 +1,11 @@
-import React from 'react'
-import BlogRoll from '../components/BlogRoll'
-import styled from 'styled-components'
-import { graphql } from 'gatsby'
+import React from "react";
+import BlogRoll from "../components/BlogRoll";
+import styled from "styled-components";
+import { graphql } from "gatsby";
 
 const Relative = styled.div`
   position: relative;
-`
+`;
 const Grid = styled.div`
   @media (min-width: 1088px) {
     grid-template-columns: 320px 320px 320px;
@@ -16,7 +16,7 @@ const Grid = styled.div`
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   justify-content: center;
-`
+`;
 const Overlay = styled.div`
   position: absolute;
   bottom: 0;
@@ -29,7 +29,7 @@ const Overlay = styled.div`
   background: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
   transition: transform 0.5s ease-in-out;
-`
+`;
 
 const Card = styled(Relative)`
   position: relative;
@@ -41,10 +41,10 @@ const Card = styled(Relative)`
       transform: translateY(0%);
     }
   }
-`
+`;
 export default class BlogIndexPage extends React.Component {
   render() {
-    const { allInstaNode } = this.props.data
+    const { allInstaNode } = this.props.data;
     return (
       <>
         <section className="section">
@@ -78,7 +78,7 @@ export default class BlogIndexPage extends React.Component {
           </div>
         </section>
       </>
-    )
+    );
   }
 }
 
@@ -114,4 +114,4 @@ export const BlogIndexPageQuery = graphql`
       }
     }
   }
-`
+`;
