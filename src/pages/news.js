@@ -88,7 +88,7 @@ export const BlogIndexPageQuery = graphql`
       edges {
         node {
           id
-          likes
+          # likes
           comments
           original
           timestamp
