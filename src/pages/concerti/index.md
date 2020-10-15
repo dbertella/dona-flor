@@ -3,9 +3,23 @@ templateKey: about-page
 title: Prossime Date
 image: /img/img_8342-57-min.jpg
 ---
-### **2020** 
+### **2020**
+
+**5 dicembre** - Selva Viva (Va)
+
+**18 settembre** - Airuno (Lc)
+
+**30 agosto** - Pin La Spezia (Sp)
+
+**8 agosto -** Somma Lombardo (Va)
+
+**24 luglio -** Museo della Seta, Garlate (Lc)
+
+**26 giugno** - Beolco (Lc)
 
 **19 gennaio** - Cascina Casottello, Mi
+
+
 
 ### **2019**
 
