@@ -19,7 +19,7 @@ Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.
 
 ### Genre
 
-⚡️Free Etnomusic | Free folk | Soul songs
+⚡️Free Etnomusic | World | Soul songs
 
 ### Band Members
 
@@ -32,8 +32,6 @@ Max Confalonieri - Contrabbasso/ Basso;
 Max Malavasi - Percussioni\
 \
 Miriam Valvassori - Cori/ Arpa
-
-
 
 **Ospiti d'onore:**
 
