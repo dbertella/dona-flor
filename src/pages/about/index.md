@@ -51,7 +51,7 @@ Max Malavasi - Percussioni\
 \
 Miriam Valvassori - Cori/ Arpa
 
-**Ospiti d'onore:**
+**Ospiti:**
 
 Roberto Carlotti - Fisarmonica e bouzouki;\
 \
