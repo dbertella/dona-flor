@@ -7,19 +7,17 @@ image: /img/img_8342-57-min.jpg
 
 **5 dicembre** - Selva Viva (Va)
 
-**18 settembre** - Airuno (Lc)
+18 settembre - Airuno (Lc)
 
-**30 agosto** - Pin La Spezia (Sp)
+30 agosto - Pin La Spezia (Sp)
 
-**8 agosto -** Somma Lombardo (Va)
+8 agosto - Somma Lombardo (Va)
 
-**24 luglio -** Museo della Seta, Garlate (Lc)
+24 luglio - Museo della Seta, Garlate (Lc)
 
-**26 giugno** - Beolco (Lc)
+26 giugno - Beolco (Lc)
 
-**19 gennaio** - Cascina Casottello, Mi
-
-
+19 gennaio - Cascina Casottello, Mi
 
 ### **2019**
 
