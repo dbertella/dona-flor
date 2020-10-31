@@ -21,6 +21,4 @@ Le città si riempiono di gente che danza, suona e festeggia, celebrando vita e 
 
 Dal 2008 El Dia de Muertos è patrimonio dell'UNESCO.
 
-
-
-https://www.youtube.com/watch?v=O1q0e2AN4V4&ab_channel=FordQuarterman
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O1q0e2AN4V4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
