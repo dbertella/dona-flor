@@ -28,12 +28,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `6773082462`, // `donaflor.music`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Dōna Flor",
