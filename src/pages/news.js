@@ -49,24 +49,24 @@ const igUrl = (username) =>
   `https://instagram.com/graphql/query/?query_id=17888483320059182&variables={"id":"${username}","first":12,"after":null}`;
 
 const BlogIndexPage = () => {
-  const [allInsta, setAllInsta] = useState([]);
-  useEffect(() => {
-    fetch(igUrl(IG_ID))
-      .then((j) => j.json())
-      .then(({ data }) => {
-        const photos = [];
-        data.user.edge_owner_to_timeline_media.edges.forEach((edge) => {
-          if (edge.node) {
-            photos.push({
-              id: edge.node.id,
-              thumbnail: edge.node.thumbnail_resources[2].src,
-              caption: edge.node.edge_media_to_caption.edges[0].node.text,
-            });
-          }
-        });
-        setAllInsta(photos);
-      });
-  }, []);
+  // const [allInsta, setAllInsta] = useState([]);
+  // useEffect(() => {
+  //   fetch(igUrl(IG_ID))
+  //     .then((j) => j.json())
+  //     .then(({ data }) => {
+  //       const photos = [];
+  //       data.user.edge_owner_to_timeline_media.edges.forEach((edge) => {
+  //         if (edge.node) {
+  //           photos.push({
+  //             id: edge.node.id,
+  //             thumbnail: edge.node.thumbnail_resources[2].src,
+  //             caption: edge.node.edge_media_to_caption.edges[0].node.text,
+  //           });
+  //         }
+  //       });
+  //       setAllInsta(photos);
+  //     });
+  // }, []);
 
   return (
     <>
@@ -82,7 +82,7 @@ const BlogIndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
@@ -99,7 +99,7 @@ const BlogIndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
