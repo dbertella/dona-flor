@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: Dōna Flor
-image: /img/about.jpg
+image: /img/dona-florstudio-registrazione-2021_dsf0500.jpg
 ---
 ### Biography
 
