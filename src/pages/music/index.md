@@ -3,6 +3,16 @@ templateKey: about-page
 title: Music
 image: /img/music.jpg
 ---
+Il 7 maggio uscirà su tutte le piattaforme online il nostro nuovo disco "Les Voyages Extraordinaires!
+
+Questo è il primo singolo, LLanto y Ardor
+
+
+
+
+
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jsoUPswigZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Puoi trovare qui la nostra musica
