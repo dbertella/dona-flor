@@ -7,7 +7,7 @@ image: /img/about.jpg
 
 ITA
 
-💃🏻  **Dōna Flor** è una musica in viaggio per mari e per terre, tra sonorità sudamericane, gitane, brani tradizionali e inediti, da Capoverde, ai Balcani, dal Klezmer al mediterraneo, con arrangiamenti originali e contaminazioni jazz.
+**Dōna Flor** è una musica in viaggio per mari e per terre, tra sonorità sudamericane, gitane, brani tradizionali e inediti, da Capoverde, ai Balcani, dal Klezmer al mediterraneo, con arrangiamenti originali e contaminazioni jazz.
 
  E' una musica di frontiera, musica dell'anima, un mosaico di colori e mescolanze che portano l'ascoltatore in viaggio verso terre lontane; ma sempre terre dell'uomo, in cui le emozioni si impastano di musica e spingono le radici oltre confine.
 
@@ -15,7 +15,8 @@ Dōna Flor rivendica la bellezza e la forza del femminile, portando anche canti 
 
 Il progetto nasce nel 2015, dall'idea di Cecilia Fumanelli e nel tempo diventa un contenitore ricco di esperienze e collaborazioni artistiche musicali, anche legate al mondo dello spettacolo, in particolare al circo contemporaneo.
 
-Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.
+Nel 2016 esce il primo disco, "Alma Desnuda", con l'etichetta IRD.\
+Il 7 maggio 2022 esce il secondo disco, primo di inediti: Les Voyages Extraordinaires.
 
 
 
@@ -31,13 +32,9 @@ This project, born from the idea of Cecilia Fumanelli in 2015, has over time bec
 
 In 2016 their first album, "Alma Desnuda", was released with the IRD label.
 
-
-
 ### Genre
 
 ⚡️Free Etnomusic | World | Soul songs
-
-
 
 ### Band Members
 
