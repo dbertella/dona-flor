@@ -34,7 +34,7 @@ In 2016 their first album, "Alma Desnuda", was released with the IRD label.
 
 ### Genre
 
-⚡️Free Etnomusic | World | Soul songs
+⚡️World music | Soul songs
 
 ### Band Members
 
@@ -50,8 +50,6 @@ Miriam Valvassori - Cori/ Arpa
 
 **Ospiti:**
 
-Roberto Carlotti - Fisarmonica e bouzouki;\
+Giulia Larghi - Violino\
 \
-Guido Baldoni - Fisarmonica\
-\
-Giulia Larghi - Violino
+Raffaele Kohler- Tromba
