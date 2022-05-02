@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: Dōna Flor
-logo: /img/progetto-senza-titolo-1-copia.png
+logo: /img/dona-flor-03.png
 image: /img/copertina-con-logo-1-.jpg
 ---
 
