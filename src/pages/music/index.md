@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: Music
-image: /img/music.jpg
+image: /img/cecilia-dicembre-2021-set-al-dedalo_dsf8248121421.jpg
 ---
 Il 7 maggio uscirà su tutte le piattaforme online il nostro nuovo disco "Les Voyages Extraordinaires!
 
