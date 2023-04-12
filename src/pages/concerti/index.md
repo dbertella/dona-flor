@@ -11,6 +11,6 @@ image: /img/155-festivaldella-musica-attiva-pd-46-folkbar-bellinzona-116-selva-v
 
 8﻿ luglio - Caffè Evora / La Serra, SP
 
-9﻿ luglio - Agriturismo Pian della Chiesa / Montemarcello, SP 
+9﻿ luglio - Agriturismo Pian della Chiesa / Monte Marcello, SP 
 
 1﻿1 luglio - La Locanda / Ameglia Alta, SP
