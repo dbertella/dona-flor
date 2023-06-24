@@ -15,11 +15,23 @@ image: /img/155-festivaldella-musica-attiva-pd-46-folkbar-bellinzona-116-selva-v
 
 3﻿ giugno - Selva Viva / Turbigo, Mi
 
-8﻿ luglio - Caffè Evora / La Serra, SP
+2﻿5 giugno - Cascina Ronco / Milano
+
+7﻿ luglio - Busalla / Genova
 
 9﻿ luglio - Agriturismo Pian della Chiesa / Monte Marcello, SP 
 
 1﻿1 luglio - La Locanda / Ameglia Alta, SP
+
+1﻿3 luglio - MusicaMondi / Milano
+
+1﻿5 luglio - Casatenovo / Lc
+
+2﻿0 luglio - evento privato
+
+9﻿ settembre - evento privato
+
+1﻿4 settembre - evento privato
 
 
 
@@ -50,8 +62,6 @@ image: /img/155-festivaldella-musica-attiva-pd-46-folkbar-bellinzona-116-selva-v
 4﻿ novembre - Seratine al Dedalo / Casatenovo, LC
 
 1﻿8 novembre - Salotti Tour / evento privato
-
-
 
 2﻿021
 
