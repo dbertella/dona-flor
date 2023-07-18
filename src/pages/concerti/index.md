@@ -17,9 +17,11 @@ image: /img/155-festivaldella-musica-attiva-pd-46-folkbar-bellinzona-116-selva-v
 
 2﻿5 giugno - Cascina Ronco / Milano
 
-7﻿ luglio - Busalla / Genova
+8 luglio - Busalla / Genova
 
 9﻿ luglio - Agriturismo Pian della Chiesa / Monte Marcello, SP 
+
+1﻿0 luglio - enoteca Il Pirun, Coriniglia, SP
 
 1﻿1 luglio - La Locanda / Ameglia Alta, SP
 
@@ -27,11 +29,17 @@ image: /img/155-festivaldella-musica-attiva-pd-46-folkbar-bellinzona-116-selva-v
 
 1﻿5 luglio - Casatenovo / Lc
 
-2﻿0 luglio - evento privato
+2﻿0 luglio - Evento privato
 
-9﻿ settembre - evento privato
+2﻿1 luglio - Usteria, Lecco, h. 21
 
-1﻿4 settembre - evento privato
+9﻿ settembre - Evento privato
+
+1﻿4 settembre - Evento privato
+
+2﻿3 settembre - Correggio, Caffè Teatro
+
+3﻿0 settembre - Cascina Bagaggera
 
 
 
